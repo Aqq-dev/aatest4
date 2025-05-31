@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 API_KEY = os.getenv("FORTNITE_API_KEY")
 BASE_URL = "https://fortnite-api.com/v2"
 
-intents = discord.Intents.default()
-bot = discord.Client(intents=intents)
+intents = discord.Intents.all()
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 headers = {"Authorization": API_KEY}
 
