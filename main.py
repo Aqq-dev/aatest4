@@ -6,6 +6,8 @@ import aiohttp
 from keep_alive import keep_alive
 from dotenv import load_dotenv
 
+load_dotenv()
+
 API_KEY = os.getenv("FORTNITE_API_KEY")
 BASE_URL = "https://fortnite-api.com/v2"
 
