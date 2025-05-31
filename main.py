@@ -1,6 +1,7 @@
 import os
 import discord
 from discord import app_commands
+from discord.ext import commands
 import aiohttp
 from keep_alive import keep_alive
 from dotenv import load_dotenv
